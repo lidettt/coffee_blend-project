@@ -1,0 +1,588 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* font : Liter,Lexend Deca */
+body {
+  position: relative;
+  background-image: url("images/bg_3.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.menu-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  letter-spacing: 2px;
+}
+.our-menu {
+  font-weight: 400;
+  font-family: "Josefin Sans", serif;
+  font-size: 30px;
+}
+.home-menu {
+  display: flex;
+  flex-direction: row;
+}
+.home-menu .color-standing {
+  color: rgba(255, 255, 255, 0.396);
+}
+.home-menu a {
+  font-size: 13px;
+  margin-top: 20px;
+  color: white;
+  border-bottom: 2px rgba(255, 255, 255, 0.396) solid;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+
+/* Black Information and Booking Box */
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.info-container {
+  background-color: black;
+  display: flex;
+  color: white;
+  width: 66vw;
+  flex-direction: row;
+  padding: 2% 3.5%;
+  justify-content: center;
+  /* position: fixed;
+  bottom: 0; */
+}
+.info-container div {
+  width: 23%;
+}
+.info-container span {
+  font-weight: 500;
+  font-family: "Signika Negative", serif;
+  font-family: Liter;
+  /* letter-spacing: 2px; */
+  font-size: 15px;
+}
+.info-container i {
+  padding-top: 5px;
+  margin: 0 20px;
+  color: #c29b64;
+  font-size: 15px;
+}
+.info-container p {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Lexend Deca;
+  color: rgba(255, 255, 255, 0.396);
+}
+
+.booking-box {
+  position: absolute;
+  right: 0;
+  background-color: #c29b64;
+  width: 40vw;
+  height: 40vh;
+  padding: 20px 40px;
+}
+.book-table-title {
+  font-size: 16px;
+  font-family: Lexend Deca;
+}
+.booking-name-container,
+.booking-info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 35px 0;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+.booking-box p,
+.booking-info-container i {
+  font-size: 13px;
+}
+.booking-info-container i {
+  margin-right: 15px;
+}
+.booking-name-container input {
+  width: 215px;
+  color: white;
+}
+.booking-box input {
+  font-family: Lexend Deca;
+  font-size: 13px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.396);
+  outline: none;
+  /* padding: px; */
+  background: transparent;
+}
+.booking-info-container input {
+  width: 132px;
+}
+.date,
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.message-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.message-box input {
+  width: 320px;
+}
+.message-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+/* End Black Information and Booking Box */
+
+/* Menun Desserts and Drinks */
+.second-background {
+  background: url("images/bg_4.jpg") center/cover no-repeat fixed;
+  height: 200vh;
+}
+.default-padding {
+  padding: 0 15%;
+  /* max-width: 1280px; */
+  margin: auto;
+}
+.menu-category {
+  color: white;
+  font-size: 30px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  gap: 30px;
+}
+.menu-box {
+  margin-top: 10%;
+  /* margin-right: 3px; */
+  display: flex;
+  flex-direction: row;
+}
+.menu-box img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-radius: 35px;
+}
+.menu-info-box {
+  padding-left: 15px;
+}
+.menu-name,
+.menu-price {
+  font-size: 18px;
+  padding-bottom: 4px;
+  display: inline-block;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.711);
+}
+.menu-name {
+  padding-right: 10px;
+}
+.menu-price {
+  padding-left: 50px;
+  color: #d7a069;
+}
+.menu-name-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: #d7a069 1px dashed;
+
+  margin-bottom: 15px;
+}
+.menu-description,
+.discover-description,
+.button-info-desc {
+  color: rgba(255, 255, 255, 0.396);
+  font-size: 14px;
+  font-family: Lexend Deca;
+}
+/* End Menu Drinks and Desserts */
+/* DISCOVER OUR PRODUCT */
+.discover-container,
+.discover-description,
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.discover-description {
+  padding: 0 30%;
+}
+.discover-text-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.7;
+  margin-bottom: 30px;
+}
+.discover {
+  color: #d7a069;
+  font-size: 50px;
+  font-family: "Parisienne", serif;
+}
+.our-products {
+  font-size: 40px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: Liter;
+}
+
+/* END DISCOVER OUR PRODUCTS */
+
+/* DRINKS and DESSERTS */
+.button-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.button-container button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #d7a069;
+  color: #d7a069;
+  padding: 17px 15px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.button-container button:hover {
+  background-color: #c29b64;
+  color: black;
+}
+.clicked-btn {
+  color: black;
+  background-color: #d7a069;
+}
+
+.button-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 15%;
+}
+
+.button-info-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.button-info-name_price {
+  margin: 25px 0;
+  color: white;
+  font-weight: 550;
+  font-size: 20px;
+  font-family: Liter;
+}
+
+.item-container button {
+  padding: 10px;
+  background-color: transparent;
+  color: #d7a069;
+  border: 2px solid #d7a069;
+  font-family: Lexend Deca;
+}
+.desserts {
+  display: none;
+}
+/* .button-container .desserts-btn:hover {
+} */
+
+/* END MENU BUTTONS */
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-description p {
+    font-size: 16px;
+    padding: 0 15%;
+  }
+  /* Black Information and Booking Box */
+
+  .info-container {
+    width: 60%;
+    padding: 3% 2%;
+  }
+  .info-container div {
+    width: 100%;
+  }
+  .info-container span {
+    font-size: 13px;
+  }
+  .info-container i {
+    padding-top: 5px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .info-container p {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .booking-box {
+    width: 40%;
+    height: 30%;
+    padding: 20px;
+  }
+  .book-table-title {
+    font-size: 14px;
+  }
+  .booking-name-container,
+  .booking-info-container {
+    gap: 20px;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .booking-box p,
+  .booking-info-container i {
+    font-size: 12px;
+  }
+  .booking-info-container i {
+    margin-right: 15px;
+  }
+  .booking-name-container input {
+    width: 100%;
+  }
+  .booking-box input {
+    font-size: 13px;
+  }
+  .booking-info-container input {
+    width: 100%;
+  }
+
+  .message-box {
+    gap: 15px;
+  }
+  .message-box input {
+    width: 200px;
+  }
+  .message-box a {
+    font-size: 13px;
+  }
+  /* End Black Information and Booking Box */
+
+  /* Menu Desserts and Drinks */
+  .second-background {
+    height: 150vh;
+  }
+  .menu-name,
+  .menu-price {
+    font-size: 14px;
+  }
+  .menu-price {
+    padding-left: 20px;
+    color: #d7a069;
+  }
+  .menu-description {
+    font-size: 10px;
+  }
+  /* End Menu Desserts and Drinks */
+  .discover-description {
+    padding: 0 20%;
+  }
+}
+/* For Phones Screeen */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Home */
+  .our-menu {
+    font-size: 25px;
+  }
+  /* End Home */
+  /* Black Box */
+  .box {
+    display: block;
+  }
+  .info-container {
+    width: 100%;
+    padding: 2%;
+  }
+  .info-container div {
+    width: 100%;
+  }
+  .info-container span {
+    font-size: 10px;
+  }
+  .info-container i {
+    padding-top: 4px;
+    margin: 5px;
+    font-size: 8px;
+  }
+  .info-container p {
+    padding: 5px 0;
+    font-size: 10px;
+  }
+  /* Booking Box */
+  .booking-box {
+    position: static;
+    width: 100%;
+    padding: 15px 15px 30px 15px;
+    height: auto;
+  }
+
+  .book-table-title {
+    font-size: 13px;
+  }
+  .booking-name-container,
+  .booking-info-container {
+    gap: 15px;
+    margin: 25px 0;
+  }
+  .booking-box p,
+  .booking-info-container i {
+    font-size: 10px;
+  }
+  .booking-info-container i {
+    margin-right: 8px;
+  }
+  .booking-name-container input {
+    width: 180px;
+  }
+  .booking-box input {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .booking-info-container input {
+    width: 100%;
+  }
+
+  .message-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .message-box input {
+    width: 270px;
+  }
+  .message-box a {
+    font-size: 10px;
+  }
+  /* End Booking Box */
+  /* Menu Desserts and Drinks */
+  .menu-container {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  .menu-category {
+    font-size: 25px;
+  }
+  .menu-name,
+  .menu-price {
+    font-size: 13px;
+  }
+  .menu-price {
+    padding-left: 20px;
+    color: #d7a069;
+  }
+  .menu-description {
+    font-size: 10px;
+  }
+  /* End Menu Desserts and Drinks */
+  /* DISCOVER OUR PRODUCT */
+  /* .discover-container,
+  .discover-description,
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } */
+  .discover-description {
+    padding: 0 10%;
+  }
+  .discover-text-container {
+    /* display: flex;
+    flex-direction: column;
+    line-height: 0.7; */
+    margin-bottom: 30px;
+  }
+  .discover {
+    font-size: 30px;
+  }
+  .our-products {
+    font-size: 30px;
+  }
+
+  /* END DISCOVER OUR PRODUCTS */
+  /* DRINKS and DESSERTS */
+  .button-container {
+    margin-top: 6%;
+  }
+  .button-container button {
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .button-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 0 10%;
+  }
+
+  .button-info-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .button-info-name_price {
+    margin: 25px 0;
+    font-size: 16px;
+  }
+
+  .desserts {
+    display: none;
+  }
+
+  /* END MENU BUTTONS */
+}
+/* End Responsive */

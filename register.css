@@ -1,0 +1,175 @@
+body {
+  /* background-color: black; */
+  /* font-family: Liter; */
+  margin: 0;
+}
+
+.hero {
+  background: url("images/bg_2.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Josefin Sans", serif;
+  z-index: 10;
+}
+
+.hero .content {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .home-register .color-standing {
+  color: rgba(255, 255, 255, 0.396);
+}
+.hero .home-register a {
+  font-size: 13px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: white;
+  border-bottom: 2px rgba(255, 255, 255, 0.396) solid;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+.hero h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 13px;
+  font-family: "Josefin Sans", serif;
+  letter-spacing: 2px;
+}
+
+/* Register Box */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/bg_4.jpg);
+}
+
+.register-box {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  width: 60%;
+  color: white;
+}
+
+.register-box h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: none;
+  background: black;
+  color: white;
+  border: rgb(48, 28, 3) solid 0.1px;
+}
+
+button {
+  background: #d4a373;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #b88350;
+}
+p,
+div {
+  color: white;
+  font-family: Lexend Deca;
+}
+.default-padding {
+  padding: 0 15%;
+  /* max-width: 1280px; */
+  margin: auto;
+}
+/* Responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Register Box */
+  .register-container {
+    padding: 0 10%;
+  }
+
+  .register-box {
+    width: 70%;
+  }
+
+  .register-box h2 {
+    font-size: 22px;
+  }
+
+  /* Form Styling */
+
+  input {
+    width: 85%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Register Box */
+  .register-container {
+    padding: 0 5%;
+  }
+
+  .register-box {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .register-box h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 18px;
+    font-size: 12px;
+  }
+}
+/* End Responsive */
