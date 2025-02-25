@@ -123,11 +123,11 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
+/* 
 .contact-form button:hover {
   background: white;
   color: black;
-}
+} */
 
 p,
 div {

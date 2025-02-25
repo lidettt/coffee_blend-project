@@ -89,7 +89,7 @@ input::placeholder {
   color: #888;
 }
 
-button {
+.login-container button {
   width: 13%;
   padding: 18px;
   background-color: #caa472;
@@ -101,7 +101,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.login-container button:hover {
   background-color: #b38e5d;
 }
 p,
@@ -122,7 +122,7 @@ div {
     padding: 30px;
   }
 
-  button {
+  .login-container button {
     width: 20%;
   }
 }
@@ -145,7 +145,7 @@ div {
     padding: 15px;
   }
 
-  button {
+  .login-container button {
     width: 30%;
   }
 }
@@ -173,7 +173,7 @@ div {
     padding: 12px;
   }
 
-  button {
+  .login-container button {
     width: 40%;
     padding: 15px;
     font-size: 14px;

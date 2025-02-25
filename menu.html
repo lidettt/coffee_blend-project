@@ -1,9 +1,7 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <!-- <?php
+    <!-- <?php
       include 'header.html';  
     ?> -->
     <meta charset="UTF-8" />
@@ -46,9 +44,31 @@
     ></script>
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <nav id="header">
+        <div class="logo">
+          <span class="top">COFFEE</span>
+          <span class="bottom">BLEND</span>
+        </div>
+        <button class="header-button" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-bar" id="navbar">
+          <div class="home"><a href="index.html">HOME</a></div>
+          <div><a href="menu.html" target="_blank">MENU</a></div>
+          <div><a href="service.html" target="_blank">SERVICES</a></div>
+          <div><a href="about.html" target="_blank">ABOUT</a></div>
+          <div><a href="contact.html" target="_blank">CONTACT</a></div>
+          <div><a href="login.html" target="_blank">LOGIN</a></div>
+          <div><a href="register.html" target="_blank">REGISTER</a></div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
 
     <!-- Menu -->
-<!-- Hero -->
+    <!-- Hero -->
     <div class="menu-text-container">
       <div class="our-menu">OUR MENU</div>
       <div class="home-menu">
@@ -57,7 +77,7 @@
       </div>
     </div>
     <!-- End Hero  -->
-  
+
     <!-- Black Information Box -->
     <div class="box">
       <div class="info-container">
@@ -133,10 +153,7 @@
           <div class="menu-category">DESSERTS</div>
           <!-- Hot Cake Honey -->
           <div class="menu-box">
-            <img
-              src="images/dessert-3.jpg"
-              alt="Hot Cake Honey"
-            />
+            <img src="images/dessert-3.jpg" alt="Hot Cake Honey" />
             <div class="menu-info-box">
               <div class="menu-name-box">
                 <p class="menu-name">Hot Cake Honey</p>
@@ -174,10 +191,7 @@
           <div class="menu-category">DRINKS</div>
           <!-- Coffee Capuccino -->
           <div class="menu-box">
-            <img
-              src="images/menu-4.jpg"
-              alt="Coffee Capuccino"
-            />
+            <img src="images/menu-4.jpg" alt="Coffee Capuccino" />
             <div class="menu-info-box">
               <div class="menu-name-box">
                 <p class="menu-name">Coffee Capuccino</p>
@@ -218,7 +232,8 @@
         <div class="discover-description">
           <span
             >Far far away,behind the word mountains,far from the countries
-            Vakalia and Consonantia, there live the blind texts.</span>
+            Vakalia and Consonantia, there live the blind texts.</span
+          >
         </div>
       </div>
       <!-- END DISCOVER OUR PRODUCTS -->
@@ -271,14 +286,86 @@
           <button>show</button>
         </div>
       </div>
-      <!-- End Second Dessert below buttons -->
-      <!-- End Item below buttons -->
+    </section>
+    <!-- End Second Dessert below buttons -->
+    <!-- End Item below buttons -->
 
-     
+    <!-- FOOTER -->
+    <section class="footer footer-padding">
+      <!-- First Box -->
+      <div class="footer-container">
+        <p class="title">ABOUT US</p>
+        <p class="footer-description">
+          Far far away, behind the word mountains, far from the countries
+          Vakalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="icons-container">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+
+      <!-- Second Box -->
+      <div class="recent-blog-container">
+        <p class="title">RECENT BLOG</p>
+        <div class="blog-container">
+          <img src="images/image_1.jpg" alt="" />
+          <div class="blog-info">
+            <div class="blog-title">
+              Even the all-powerful Pointing has no control about
+            </div>
+            <div class="blog-date">
+              <i class="fa-solid fa-calendar-days"></i> Sept 15, 2018
+              <i class="fa-solid fa-user"></i> Admin
+              <i class="fa-solid fa-message"></i> 19
+            </div>
+          </div>
+          <img src="images/image_2.jpg" alt="" />
+          <div class="blog-info">
+            <div class="blog-title">
+              Even the all-powerful Pointing has no control about
+            </div>
+            <div class="blog-date">
+              <i class="fa-solid fa-calendar-days"></i> Sept 15, 2018
+              <i class="fa-solid fa-user"></i> Admin
+              <i class="fa-solid fa-message"></i> 19
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Box -->
+      <div class="services-container">
+        <p class="title">SERVICES</p>
+        <div class="">
+          <div class="service">Cooked</div>
+          <div class="service">Deliver</div>
+          <div class="service">Quality Foods</div>
+          <div class="service">Mixed</div>
+        </div>
+      </div>
+
+      <!-- Fourth Box -->
+      <div class="questions-container">
+        <p class="title">HAVE A QUESTIONS?</p>
+        <div class="questions-info-container">
+          <div><i class="fa-solid fa-location-dot"></i></div>
+          <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+        </div>
+        <div class="questions-info-container">
+          <div><i class="fa-solid fa-phone"></i></div>
+          <p>+2 392 3929 210</p>
+        </div>
+        <div class="questions-info-container">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <p>info@yourdomain.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Footer -->
 
     <script src="index.js"></script>
   </body>
 </html>
-<!-- <?php
-include 'footer.html';  
-?> -->

@@ -53,26 +53,13 @@ nav {
   display: none;
 }
 /* Responsive */
-@media (max-width: 1024px) {
-  nav {
-    padding: 0 5%;
-    justify-content: space-between;
-  }
-
-  .logo {
-    width: 25%;
-  }
-
-  .nav-bar {
-    gap: 25px;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   nav {
     width: 100%;
     height: 10vh;
     padding: 0 5%;
+    justify-content: space-between;
   }
   .logo {
     width: 20%;
@@ -114,6 +101,7 @@ nav {
   .nav-bar div {
     margin: 20px 0;
     transition: border 0.5s ease;
+    text-align: center;
   }
 
   .header-button {
@@ -125,7 +113,7 @@ nav {
     width: 100%;
     top: 100%;
     left: 0;
-    padding: 10px 10px;
+    padding: 10px 0;
     z-index: 1;
     text-align: center;
     background-color: black;
